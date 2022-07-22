@@ -23,7 +23,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>1.4.0</version>
                 <configuration>
-                    <mainClass>run.BotRun</mainClass>
+                    <mainClass>bot.biblecamp.Application</mainClass>
                 </configuration>
             </plugin>
             <plugin>
@@ -52,7 +52,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>run.BotRun</mainClass>
+                            <mainClass>bot.biblecamp.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -66,12 +66,9 @@
             <version>6.1.0</version>
         </dependency>
         <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.36</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.1</version>
         </dependency>
-
     </dependencies>
-
-
 </project>
